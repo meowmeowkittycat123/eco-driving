@@ -16,75 +16,124 @@ Dataset extracted from a local car rental company. The dataset consists of multi
 1.	CustomerTBL
 This table contains data about a customer.
 [customerID] uniquely identifies each record
+
 [name] presents the first 4 characters of the customer’s full name. The remaining characters are removed to anonymize the records
+
 [gender] 0 indicates female, 1 indicates male
+
 [member_since] contains the “month day, year” value
+
 [driving_age_yr] contains the customer’s years of driving experience
+
 [postal] contains the first 2 numbers of the customer’s home postal code
 
-2.	VehicleTBL
+3.	VehicleTBL
 This table contains data specific to each rental vehicle.
 [vehicleID] uniquely identifies each record
+
 [type] contains the value representing a carType
+
 [brand] contains the brand name of the vehicle
+
 [model] contains the model value of the vehicle
+
 [age] is the age (in years) of the vehicle
+
 [total_distance_km] is the vehicle’s total traveled mileage in km.
+
 [full_tank_gal] is the full-tank volume in gallons
+
 [km_per_gal_highway] is the estimated fuel efficiency on the highway
+
 [km_per_gal_city] is the estimated fuel efficiency in the city
+
 [CO2avg_WLTP] is the estimated carbon footprint based on the Worldwide harmonized Light vehicles Test Procedures, i.e., grams of carbon emissions per km
+
 [CO2avg_NEDC] is the estimated carbon footprint based on the New European Driving Cycle, i.e., grams of carbon emissions per km
+
 [fee_per_hour] is the rental fee for an hour of usage
 
-3.	orderTBL
+5.	orderTBL
 This table contains data specific to an order (i.e., a rental).
 [orderID] uniquely identifies each record
+
 [custeromID] represents the customer for the order
+
 [vehicleID] represents the vehicle used in the order
+
 [startDate] represents the starting date of the order
+
 [endDate] represents the ending date of the order
+
 [startTime_hr] represents the time (the specific hour) at which the order commences
+
 [startTime_min] represents the time (the specific minute) at which the order commences
+
 [startTime_ss] represents the time (the specific second) at which the order commences
+
 [endTime_hr] represents the time (the specific hour) at which the order completes
+
 [endTime_min] represents the time (the specific minute) at which the order completes
+
 [endTime_ss] represents the time (the specific second) at which the order completes
+
 [startLoc] contains the first 2 digits of the starting location postal code
+
 [endLoc] contains the first 2 digits of the ending location postal code
+
 [start_fuel_gal] indicates the amount of fuel (in gallons) at the beginning of the order
+
 [end_fuel_gal] indicates the amount of fuel (in gallons) at the end of the order
 
-4.	complaintTBL
+7.	complaintTBL
 This table contains data specific to a complaint.
 [complaintID] uniquely identifies each record
+
 [customerID] represents the customer for the complaint
+
 [date] represents the date at which the complaint is filed
+
 [issue] contains the issue category
+
 [severity] contains a numeric severity, i.e., 1 indicates least severe, 5 indicates most severe
+
 [resolved] contains 0 or 1, i.e., 0 indicates unresolved, 1 indicates resolved
 
-5.	incidentTBL
+9.	incidentTBL
 This table contains data about an incident (i.e., violations of traffic regulations)
 [incidentID] uniquely identifies each record
 [vehicleID] represents the vehicle involved in the incident
+
 [date] indicates the incident date 
 [issue] contains an incidentType value
 
-6.	incidentTypeTBL
+11.	incidentTypeTBL
 This table contains data about the 13 types of incidents.
+
 [incidentTypeID] uniquely identifies each record
+
 [detail] provides details on the violation
 
-7.	vehicleTypeTBL
+13.	vehicleTypeTBL
 This table contains data about the types of rental vehicles.
+
 [vehicleTypeID] uniquely identifies each record
+
 [type] provides details on the specific type
 
-8.	postalCodeTBL
+15.	postalCodeTBL
 This table contains the general locations based on the first 2 digits of postal codes.
+
 [postalCode] uniquely identifies each record
+
 [generalLoc] provides the details of the location
+
+ ## Project Structure
+├── IA.sql      # SQL queries used for data extraction  
+├── IA_db.sql               # SQL dataset used for the project  
+├── README.md                # Project documentation (this file)
+├── eco-driving query.docx     #Answers to Tasks
+
 
 
  
