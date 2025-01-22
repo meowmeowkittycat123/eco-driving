@@ -1,4 +1,4 @@
-# eco-driving-
+# eco-driving
 
 
 ## INTRODUCTION
@@ -132,10 +132,10 @@ This table contains the general locations based on the first 2 digits of postal 
 
  
 📂 Project Root  
-├── IA.sql                    # SQL queries used for data extraction  
-├── IA_db.sql                 # SQL dataset used for the project  
-├── README.md                 # Project documentation (this file)  
-├── eco-driving query.docx    # Answers to tasks  
+├── IA.sql                     # SQL queries used for data extraction  
+├── IA_db.sql                  # SQL dataset used for the project  
+├── README.md                  # Project documentation (this file)  
+├── eco-driving query.docx     # Answers to tasks  
 
 
 
